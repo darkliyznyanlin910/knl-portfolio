@@ -34,13 +34,14 @@ async function getVercelDeploymentDetail() {
 }
 export default async function Home() {
   const latestDeployment = await getVercelDeploymentDetail();
+  console.log(latestDeployment);
   function getStateColor(state: string) {
     switch (state) {
       case "READY":
         return "success";
       case "ERROR":
       case "CANCELED":
-        return "error";
+        return "red-600";
       case "BUILDING":
       case "INITIALIZING":
       case "QUEUED":
@@ -194,33 +195,39 @@ export default async function Home() {
           title={"Deployed with Vercel"}
           link={"https://vercel.com/"}
         >
-          <div>
-            <p className="mb-2">Last Deployment</p>
-            <p
-              className={`text-sm text-${getStateColor(
-                latestDeployment?.state!
-              )} mb-2 inline-flex`}
-            >
-              <FaCircle className="mr-2 self-center" />
-              {latestDeployment?.state}
-            </p>
-            <p className="text-sm mb-2">
-              Commit Message - {latestDeployment?.meta?.githubCommitMessage!}
-            </p>
-            <p className="text-sm mb-2">
-              Created at{" "}
-              <HumanDate
-                dateString={new Date(
-                  latestDeployment?.createdAt!
-                ).toISOString()}
-              />
-            </p>
-            {latestDeployment?.creator.username && (
-              <p className="text-sm">
-                Created by {latestDeployment?.creator.username}
+          {!!latestDeployment ? (
+            <div>
+              <p className="mb-2">Last Deployment</p>
+              <p
+                className={`text-sm text-${getStateColor(
+                  latestDeployment?.state!
+                )} mb-2 inline-flex`}
+              >
+                <FaCircle className="mr-2 self-center" />
+                {latestDeployment?.state}
               </p>
-            )}
-          </div>
+              <p className="text-sm mb-2">
+                Commit Message - {latestDeployment?.meta?.githubCommitMessage!}
+              </p>
+              <p className="text-sm mb-2">
+                Created at{" "}
+                <HumanDate
+                  dateString={new Date(
+                    latestDeployment?.createdAt!
+                  ).toISOString()}
+                />
+              </p>
+              {latestDeployment?.creator.username && (
+                <p className="text-sm">
+                  Created by {latestDeployment?.creator.username}
+                </p>
+              )}
+            </div>
+          ) : (
+            <div className="text-center text-lg font-medium text-red-600">
+              API Data Not Available
+            </div>
+          )}
         </TechUsedCard>
       </div>
     </div>
