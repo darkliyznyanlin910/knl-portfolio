@@ -30,7 +30,6 @@ async function getVercelDeploymentDetail() {
     }
   );
   const data = (await result.json()) as ListDeploymentsResponse;
-  console.log(data);
   return data.deployments.at(0);
 }
 export default async function Home() {
@@ -197,7 +196,7 @@ export default async function Home() {
         >
           {!!latestDeployment ? (
             <div>
-              <p className="mb-2">Last Deployment</p>
+              <p className="mb-2">Latest Deployment</p>
               <p
                 className={`text-sm text-${getStateColor(
                   latestDeployment?.state!

@@ -28,24 +28,6 @@ export default function Projects() {
           <div>Test</div>
         </ProjectCard>
       </div>
-      <div className="mb-4">
-        <ProjectCard
-          image={
-            <Image
-              src={"/knl-portfolio.png"}
-              alt={"Test"}
-              width={2000}
-              height={2000}
-              className="w-full"
-              priority
-            />
-          }
-          title={"This Portfolio"}
-          link={"https://github.com/darkliyznyanlin910/knl-portfolio"}
-        >
-          <div>Test</div>
-        </ProjectCard>
-      </div>
     </div>
   );
 }
