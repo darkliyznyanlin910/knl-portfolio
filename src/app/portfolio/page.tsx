@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 async function getVercelDeploymentDetail() {
   const result = await fetch(
-    "https://api.vercel.com/v6/deployments?limit=1&projectId=prj_usT3VaNoN7dTJ08G2qvQC47lEIhK&target=production",
+    "https://api.vercel.com/v6/deployments?limit=1&projectId=prj_wBV8zyAJdJJZ55IbdMCW9XRqRTKC&target=production",
     {
       headers: {
         Authorization: `Bearer ${env.VERCEL_TOKEN}`,
@@ -30,11 +30,11 @@ async function getVercelDeploymentDetail() {
     }
   );
   const data = (await result.json()) as ListDeploymentsResponse;
+  console.log(data);
   return data.deployments.at(0);
 }
 export default async function Home() {
   const latestDeployment = await getVercelDeploymentDetail();
-  console.log(latestDeployment);
   function getStateColor(state: string) {
     switch (state) {
       case "READY":
