@@ -25,7 +25,10 @@ export default function Projects() {
           title={"This Portfolio"}
           link={"https://github.com/darkliyznyanlin910/knl-portfolio"}
         >
-          <div>Test</div>
+          <div>
+            On one fine day, I just realized I don{"'"}t have a consolidated
+            portfolio website. That's why I started working on this project
+          </div>
         </ProjectCard>
       </div>
     </div>
