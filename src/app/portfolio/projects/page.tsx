@@ -26,7 +26,7 @@ export default function Projects() {
           link={"https://github.com/darkliyznyanlin910/knl-portfolio"}
         >
           <div>
-            On one fine day, I just realized I don{"'"}t have a consolidated
+            On one fine day, I just realized I don't have a consolidated
             portfolio website. That's why I started working on this project
           </div>
         </ProjectCard>

@@ -48,6 +48,10 @@ export default async function Home() {
         return "warning";
     }
   }
+  console.log(
+    latestDeployment?.state!,
+    getStateColor(latestDeployment?.state!)
+  );
   return (
     <div>
       <div className="grid md:hidden grid-flow-row grid-cols-2 gap-4 mb-8">
