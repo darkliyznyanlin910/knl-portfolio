@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <button className="btn hover:btn-success">
           <Link
-            href={"/portfolio/projects"}
+            href={"/projects"}
             className="inline-flex items-center"
           >
             <FaLaptopCode size={30} className="mr-2" />
@@ -69,7 +69,7 @@ export default function Home() {
         </button>
         <button className="btn hover:btn-success">
           <Link
-            href={"/portfolio/education"}
+            href={"/education"}
             className="inline-flex items-center"
           >
             <FaCertificate size={30} className="mr-2" />
@@ -78,7 +78,7 @@ export default function Home() {
         </button>
         <button className="btn hover:btn-success">
           <Link
-            href={"/portfolio/experience"}
+            href={"/experience"}
             className="inline-flex items-center"
           >
             <FaBriefcase size={30} className="mr-2" />
@@ -86,7 +86,7 @@ export default function Home() {
           </Link>
         </button>
         <button className="btn hover:btn-success">
-          <Link href={"/portfolio/blogs"} className="inline-flex items-center">
+          <Link href={"/blogs"} className="inline-flex items-center">
             <FaNewspaper size={30} className="mr-2" />
             Blogs
           </Link>
