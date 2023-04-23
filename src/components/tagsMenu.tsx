@@ -25,7 +25,7 @@ export function TagsMenu({ tags }: Props) {
               tag.slug === directory.at(directory.length - 1) ? "bordered" : ""
             }
           >
-            <Link href={`/portfolio/blogs/tags/${tag.slug}`}>{tag.name}</Link>
+            <Link href={`/blogs/tags/${tag.slug}`}>{tag.name}</Link>
           </li>
         ))}
       </ul>
@@ -37,7 +37,7 @@ export function TagsMenu({ tags }: Props) {
           className="select select-bordered"
           defaultValue={directory.at(directory.length - 1)}
           onChange={(e) => {
-            router.push(`/portfolio/blogs/tags/${e.target.value}`);
+            router.push(`/blogs/tags/${e.target.value}`);
           }}
         >
           {tags.map((tag, index) => (

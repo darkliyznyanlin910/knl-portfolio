@@ -12,7 +12,7 @@ interface Props {
 export default function PostsPreview({ post, tagFilter }: Props) {
   return (
     <div className="card card-side bg-base-100 shadow-xl mx-auto mb-4">
-      <Link href={`/portfolio/blog/${post.slug}`} className="my-auto">
+      <Link href={`/blog/${post.slug}`} className="my-auto">
         <figure>
           {post.featured_image && (
             <Image
@@ -26,7 +26,7 @@ export default function PostsPreview({ post, tagFilter }: Props) {
       </Link>
       <div className="card-body">
         <h2 className="card-title text-success">
-          <Link href={`/portfolio/blog/${post.slug}`}>{post.title}</Link>
+          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h2>
         <HumanDate dateString={post.published as unknown as string} />
         <div dangerouslySetInnerHTML={{ __html: post.summary }}></div>
@@ -38,7 +38,7 @@ export default function PostsPreview({ post, tagFilter }: Props) {
               }`}
               key={tag.slug}
             >
-              <Link href={`/portfolio/blogs/tags/${tag.slug}`}>{tag.name}</Link>
+              <Link href={`/blogs/tags/${tag.slug}`}>{tag.name}</Link>
             </div>
           ))}
         </div>
@@ -47,10 +47,7 @@ export default function PostsPreview({ post, tagFilter }: Props) {
             <AuthorCard author={post.author} />
           </div>
           <div>
-            <Link
-              href={`/portfolio/blogs/${post.slug}`}
-              className="btn btn-neutral"
-            >
+            <Link href={`/blogs/${post.slug}`} className="btn btn-neutral">
               Read More
             </Link>
           </div>

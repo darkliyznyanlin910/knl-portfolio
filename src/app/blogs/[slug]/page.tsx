@@ -42,9 +42,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
               <div className="sm:max-w-[50%] lg:w-auto pb-4">
                 {post.tags.map((tag) => (
                   <div className="badge badge-outline mr-2" key={tag.slug}>
-                    <Link href={`/portfolio/blogs/tags/${tag.slug}`}>
-                      {tag.name}
-                    </Link>
+                    <Link href={`/blogs/tags/${tag.slug}`}>{tag.name}</Link>
                   </div>
                 ))}
               </div>

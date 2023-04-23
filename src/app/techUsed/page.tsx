@@ -48,52 +48,8 @@ export default async function Home() {
         return "warning";
     }
   }
-  console.log(
-    latestDeployment?.state!,
-    getStateColor(latestDeployment?.state!)
-  );
   return (
     <div>
-      <div className="grid md:hidden grid-flow-row grid-cols-2 gap-4 mb-8">
-        <div className="col-span-2">
-          <h3 className="mt-2 text-2xl font-bold text-success tracking-tight md:text-3xl lg:text-4xl">
-            Other Sections
-          </h3>
-        </div>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/portfolio/projects"}
-            className="inline-flex items-center"
-          >
-            <FaLaptopCode size={30} className="mr-2" />
-            Projects
-          </Link>
-        </button>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/portfolio/education"}
-            className="inline-flex items-center"
-          >
-            <FaCertificate size={30} className="mr-2" />
-            Education
-          </Link>
-        </button>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/portfolio/experience"}
-            className="inline-flex items-center"
-          >
-            <FaBriefcase size={30} className="mr-2" />
-            Experience
-          </Link>
-        </button>
-        <button className="btn hover:btn-success">
-          <Link href={"/portfolio/blogs"} className="inline-flex items-center">
-            <FaNewspaper size={30} className="mr-2" />
-            Blogs
-          </Link>
-        </button>
-      </div>
       <div className="mb-8 md:text-center">
         <h3 className="mt-2 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
           <span className="text-success">Technologies</span> Used in this
@@ -103,7 +59,12 @@ export default async function Home() {
       <div className="space-y-6 sm:grid sm:grid-flow-row sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-6 sm:gap-y-6 sm:space-y-0 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 lg:gap-x-8">
         <TechUsedCard
           icon={
-            <Image src={"/next.svg"} alt={"Next.js"} height={24} width={24} />
+            <Image
+              src={"/techUsed/next.svg"}
+              alt={"Next.js"}
+              height={24}
+              width={24}
+            />
           }
           title={"Next.js"}
           link={"https://nextjs.org/"}
@@ -119,7 +80,7 @@ export default async function Home() {
         <TechUsedCard
           icon={
             <Image
-              src={"/typescript.svg"}
+              src={"/techUsed/typescript.svg"}
               alt={"Typescript"}
               height={24}
               width={24}
@@ -137,7 +98,7 @@ export default async function Home() {
         <TechUsedCard
           icon={
             <Image
-              src={"/butter-w.png"}
+              src={"/techUsed/butter-w.png"}
               alt={"ButterCMS"}
               height={24}
               width={24}
@@ -156,7 +117,7 @@ export default async function Home() {
         <TechUsedCard
           icon={
             <Image
-              src={"/tailwind.svg"}
+              src={"/techUsed/tailwind.svg"}
               alt={"Tailwind"}
               height={24}
               width={24}
@@ -173,7 +134,7 @@ export default async function Home() {
         <TechUsedCard
           icon={
             <Image
-              src={"/daisyUI.ico"}
+              src={"/techUsed/daisyUI.ico"}
               alt={"DaisyUI"}
               height={24}
               width={24}
@@ -193,7 +154,12 @@ export default async function Home() {
         </TechUsedCard>
         <TechUsedCard
           icon={
-            <Image src={"/vercel.ico"} alt={"Vercel"} height={24} width={24} />
+            <Image
+              src={"/techUsed/vercel.ico"}
+              alt={"Vercel"}
+              height={24}
+              width={24}
+            />
           }
           title={"Deployed with Vercel"}
           link={"https://vercel.com/"}

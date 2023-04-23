@@ -1,6 +1,5 @@
 import PostsPreview from "@/components/postPreview";
 import { butter } from "@/utils/buttercms";
-import type { Metadata } from "next/types";
 
 async function getPostList() {
   const posts = await butter.post.list();

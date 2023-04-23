@@ -12,7 +12,7 @@ export function TechUsedCard({ icon, link, title, children }: Props) {
     <div className="relative flex flex-col justify-between overflow-hidden rounded-md border border-base-300 hover:border-success">
       <div className="flex items-center space-x-4 p-2 pl-5 bg-base-300">
         {icon}
-        <p className="text-lg font-medium leading-6 text-t3-purple-200 md:text-xl">
+        <p className="text-lg font-medium leading-6 md:text-xl">
           <Link
             href={link}
             target="_blank"
@@ -23,7 +23,7 @@ export function TechUsedCard({ icon, link, title, children }: Props) {
           </Link>
         </p>
       </div>
-      <div className="m-6 text-sm text-t3-purple-100 subpixel-antialiased md:text-base">
+      <div className="m-6 text-sm subpixel-antialiased md:text-base">
         {children}
       </div>
     </div>
