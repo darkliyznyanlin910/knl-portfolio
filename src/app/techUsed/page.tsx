@@ -60,6 +60,52 @@ export default async function Home() {
         <TechUsedCard
           icon={
             <Image
+              src={"/techUsed/vercel.ico"}
+              alt={"Vercel"}
+              height={24}
+              width={24}
+            />
+          }
+          title={"Deployed with Vercel"}
+          link={"https://vercel.com/"}
+        >
+          {!!latestDeployment ? (
+            <div>
+              <p className="mb-2">Latest Deployment</p>
+              <p
+                className={`text-sm text-${getStateColor(
+                  latestDeployment?.state!
+                )} mb-2 inline-flex`}
+              >
+                <FaCircle className="mr-2 self-center" />
+                {latestDeployment?.state}
+              </p>
+              <p className="text-sm mb-2">
+                Commit Message - {latestDeployment?.meta?.githubCommitMessage!}
+              </p>
+              <p className="text-sm mb-2">
+                Created at{" "}
+                <HumanDate
+                  dateString={new Date(
+                    latestDeployment?.createdAt!
+                  ).toISOString()}
+                />
+              </p>
+              {latestDeployment?.creator.username && (
+                <p className="text-sm">
+                  Created by {latestDeployment?.creator.username}
+                </p>
+              )}
+            </div>
+          ) : (
+            <div className="text-center text-lg font-medium text-red-600">
+              API Data Not Available
+            </div>
+          )}
+        </TechUsedCard>
+        <TechUsedCard
+          icon={
+            <Image
               src={"/techUsed/next.svg"}
               alt={"Next.js"}
               height={24}
@@ -151,52 +197,6 @@ export default async function Home() {
             </span>
             .
           </div>
-        </TechUsedCard>
-        <TechUsedCard
-          icon={
-            <Image
-              src={"/techUsed/vercel.ico"}
-              alt={"Vercel"}
-              height={24}
-              width={24}
-            />
-          }
-          title={"Deployed with Vercel"}
-          link={"https://vercel.com/"}
-        >
-          {!!latestDeployment ? (
-            <div>
-              <p className="mb-2">Latest Deployment</p>
-              <p
-                className={`text-sm text-${getStateColor(
-                  latestDeployment?.state!
-                )} mb-2 inline-flex`}
-              >
-                <FaCircle className="mr-2 self-center" />
-                {latestDeployment?.state}
-              </p>
-              <p className="text-sm mb-2">
-                Commit Message - {latestDeployment?.meta?.githubCommitMessage!}
-              </p>
-              <p className="text-sm mb-2">
-                Created at{" "}
-                <HumanDate
-                  dateString={new Date(
-                    latestDeployment?.createdAt!
-                  ).toISOString()}
-                />
-              </p>
-              {latestDeployment?.creator.username && (
-                <p className="text-sm">
-                  Created by {latestDeployment?.creator.username}
-                </p>
-              )}
-            </div>
-          ) : (
-            <div className="text-center text-lg font-medium text-red-600">
-              API Data Not Available
-            </div>
-          )}
         </TechUsedCard>
       </div>
     </div>

@@ -125,12 +125,9 @@ export default function RootLayout({
             <footer className="footer p-4 bg-base-300">
               <div className="w-full items-center flex justify-between">
                 <p>Copyright © 2023 Johnny Lin</p>
-                <button
-                  className="btn btn-square btn-sm btn-outline"
-                  type="button"
-                >
-                  <Link href={"/techUsed"}>
-                    <FaInfo />
+                <button className="btn btn-sm btn-outline" type="button">
+                  <Link href={"/techUsed"} className="inline-flex items-center">
+                    <FaInfo className="mr-3" /> Tech Used
                   </Link>
                 </button>
               </div>
