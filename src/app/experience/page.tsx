@@ -31,8 +31,10 @@ export default function Experience() {
             >
               <ul className="max-w-md space-y-1 list-disc list-inside">
                 <li>
-                  Planned website architecture, frontend - Next.js, backend -
-                  NodeJS with Typescript, API - TRPC.
+                  Planned website architecture, frontend -{" "}
+                  <span className="text-success">Next.js</span>, backend -
+                  <span className="text-success">NodeJS with Typescript</span>,
+                  API - <span className="text-success">TRPC</span>.
                 </li>
                 <li>Reviewed code, debugged problems, and corrected issues.</li>
                 <li>Coordinated 2 developers as team lead.</li>
@@ -47,7 +49,8 @@ export default function Experience() {
                 </li>
                 <li>
                   Coordinated efficient, large-scale and automated software
-                  deployments by setting up CI/CD pipelines.
+                  deployments by setting up{" "}
+                  <span className="text-success">CI/CD pipelines</span>.
                 </li>
               </ul>
             </TimelineCard>
@@ -76,7 +79,10 @@ export default function Experience() {
               timeline={"Mar 2022 - Aug 2022"}
             >
               <ul className="max-w-md space-y-1 list-disc list-inside">
-                <li>Achieved Distinction for this internship project.</li>
+                <li>
+                  <span className="text-success">Achieved Distinction</span> for
+                  this internship project.
+                </li>
                 <li>
                   Consulted with supervisors and initiated project goals and
                   timeline.
@@ -89,23 +95,32 @@ export default function Experience() {
                   supervisors.
                 </li>
                 <li>
-                  Improved autonomous navigation system to be more reliable.
+                  <span className="text-success">
+                    Improved autonomous navigation system
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-success">
+                    object detection algorithm
+                  </span>{" "}
+                  to be more reliable.
                 </li>
-                <li>Improved object detection algorithm.</li>
                 <li>
                   Implemented private LAN network in SP campus to test remote
                   operating system of Autonomous Vehicle.
                 </li>
                 <li>
-                  Implemented secured API and website for users to book
-                  Autonomous Vehicle.
+                  Implemented <span className="text-success">secured API</span>{" "}
+                  and <span className="text-success">website</span> for users to
+                  book Autonomous Vehicle.
                 </li>
                 <li>
-                  Developed better and more optimized 3D mapping software.
+                  Developed <span className="text-success">better</span> and{" "}
+                  <span className="text-success">more optimized</span> 3D
+                  mapping software.
                 </li>
                 <li>
                   Collaborated with other departments to develop a centralized
-                  system architecture.
+                  <span className="text-success">system architecture</span>.
                 </li>
               </ul>
             </TimelineCard>

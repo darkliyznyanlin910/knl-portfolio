@@ -33,10 +33,16 @@ export default function Education() {
             >
               <ul className="max-w-md space-y-1 list-disc list-inside">
                 <li>Selected to join SP-NUS CP</li>
-                <li>Completed Diploma course in 5 semesters</li>
                 <li>
-                  Completed 3 modules from NUS to get exemption during my
-                  full-time degree
+                  Completed Diploma course in{" "}
+                  <span className="text-success">5 semesters</span>
+                </li>
+                <li>
+                  Completed{" "}
+                  <span className="text-success">
+                    3 modules from NUS to get exemption
+                  </span>{" "}
+                  during my full-time degree
                 </li>
               </ul>
             </TimelineCard>
@@ -62,22 +68,29 @@ export default function Education() {
             >
               <ul className="max-w-md space-y-1 list-disc list-inside">
                 <li>
-                  Gained experience for IT security management systems (SIEM,
-                  Cyber Threat Intelligence Platforms) through hands-on
-                  practical lessons.
+                  Gained experience for IT security management systems (
+                  <span className="text-success">
+                    SIEM, Cyber Threat Intelligence Platforms
+                  </span>
+                  ) through hands-on practical lessons.
                 </li>
                 <li>
-                  Elected into Publicity Department for Singapore Polytechnic
-                  International Students' Club (SPISC) in 2021.
+                  Elected into{" "}
+                  <span className="text-success">Publicity Department</span> for
+                  Singapore Polytechnic International Students' Club (SPISC) in
+                  2021.
                 </li>
                 <li>
-                  Organized multiple student bonding events for SPISC in
-                  AY2020/2021 and AY2021/2022
+                  <span className="text-success">
+                    Organized multiple student bonding events
+                  </span>{" "}
+                  for SPISC in AY2020/2021 and AY2021/2022
                 </li>
                 <li>
-                  Chairperson in collaborating with Temasek Polytechnic
-                  International Students' Group and organized a inter-poly
-                  bonding event for 200 participants.
+                  <span className="text-success">Chairperson</span> in
+                  collaborating with Temasek Polytechnic International Students'
+                  Group and organized an inter-poly bonding event for 200
+                  participants.
                 </li>
               </ul>
             </TimelineCard>
@@ -102,7 +115,10 @@ export default function Education() {
               timeline={"Jan 2018 - Nov 2019"}
             >
               <ul className="max-w-md space-y-1 list-disc list-inside">
-                <li>Attended CWSS with full scholarship in Singapore.</li>
+                <li>
+                  Attended CWSS{" "}
+                  <span className="text-success">with ASEAN scholarship</span>.
+                </li>
                 <li>Elected as a class Chairperson for Secondary 3.</li>
                 <li>
                   Organized class bonding sessions once in one term (3 months).

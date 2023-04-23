@@ -1,7 +1,13 @@
 import { SocialMediaLinks } from "@/components/socialMediaLinks";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDownload } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaCertificate,
+  FaDownload,
+  FaLaptopCode,
+  FaNewspaper,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -45,6 +51,46 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="w-full grid md:hidden grid-flow-row grid-cols-2 gap-4 mb-8">
+        <div className="col-span-2">
+          <h3 className="mt-2 text-2xl font-bold text-success tracking-tight md:text-3xl lg:text-4xl">
+            Other Sections
+          </h3>
+        </div>
+        <button className="btn hover:btn-success">
+          <Link
+            href={"/portfolio/projects"}
+            className="inline-flex items-center"
+          >
+            <FaLaptopCode size={30} className="mr-2" />
+            Projects
+          </Link>
+        </button>
+        <button className="btn hover:btn-success">
+          <Link
+            href={"/portfolio/education"}
+            className="inline-flex items-center"
+          >
+            <FaCertificate size={30} className="mr-2" />
+            Education
+          </Link>
+        </button>
+        <button className="btn hover:btn-success">
+          <Link
+            href={"/portfolio/experience"}
+            className="inline-flex items-center"
+          >
+            <FaBriefcase size={30} className="mr-2" />
+            Experience
+          </Link>
+        </button>
+        <button className="btn hover:btn-success">
+          <Link href={"/portfolio/blogs"} className="inline-flex items-center">
+            <FaNewspaper size={30} className="mr-2" />
+            Blogs
+          </Link>
+        </button>
       </div>
     </div>
   );
