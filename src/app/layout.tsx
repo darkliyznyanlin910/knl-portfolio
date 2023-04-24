@@ -35,7 +35,7 @@ export default function RootLayout({
             checked={sidebarOpen}
             onChange={() => setSidebarOpen(!sidebarOpen)}
           />
-          <div className="drawer-content flex flex-col min-h-screen">
+          <div className="drawer-content flex flex-col">
             {/* <!-- Navbar --> */}
             <div
               className="w-full navbar bg-base-300 sticky top-0"
@@ -83,7 +83,7 @@ export default function RootLayout({
               </div>
             </div>
             {/* <!-- Page content here --> */}
-            <main className="mt-4 flex px-4 flex-grow">
+            <main className="mt-4 flex px-4">
               <div className="container mx-auto w-full md:w-3/4 lg:w-2/3 mb-4">
                 {directory.length > 0 && (
                   <div className="text-md breadcrumbs mb-2">
@@ -122,7 +122,7 @@ export default function RootLayout({
                 {children}
               </div>
             </main>
-            <footer className="footer p-4 bg-base-300">
+            <footer className="footer p-4 bg-base-300 absolute bottom-0">
               <div className="w-full items-center flex justify-between">
                 <p>Copyright © 2023 Johnny Lin</p>
                 <button className="btn btn-sm btn-outline" type="button">
