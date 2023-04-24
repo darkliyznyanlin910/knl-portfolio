@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="hero-content flex-col md:flex-row-reverse">
+    <div className="flex-col md:flex-row-reverse">
       <Image
         src={"/profilePicture.jpg"}
         alt={"Profile Picture"}
@@ -20,7 +20,7 @@ export default function Home() {
         className="max-w-sm rounded-lg shadow-2xl"
         priority
       />
-      <div>
+      <div className="pt-6">
         <h1 className="text-4xl font-bold">
           Hi I{"'"}m <span className="text-success">Johnny Lin</span>,
         </h1>
@@ -35,59 +35,48 @@ export default function Home() {
           resume to see what I can offer. Thank you!
         </p>
         <div className="flex justify-center md:justify-start">
-          <div className="flex justify-center md:justify-start pt-3">
-            <SocialMediaLinks />
-            <button className="btn btn-neutral ml-3">
-              <Link
-                href={
-                  "https://knl-personal.s3.ap-southeast-1.amazonaws.com/Kaung_NyanLin_Resume.pdf"
-                }
-                className="inline-flex"
-                target="_blank"
-              >
-                <FaDownload className="mr-3" />
-                My Resume
-              </Link>
-            </button>
-          </div>
+          <SocialMediaLinks />
+          <button className="btn btn-outline ml-3 btn-sm hover:btn-success">
+            <Link
+              href={
+                "https://knl-personal.s3.ap-southeast-1.amazonaws.com/Kaung_NyanLin_Resume.pdf"
+              }
+              className="inline-flex"
+              target="_blank"
+            >
+              <FaDownload className="mr-3" />
+              My Resume
+            </Link>
+          </button>
         </div>
       </div>
-      <div className="w-full grid md:hidden grid-flow-row grid-cols-2 gap-4 mb-8">
-        <div className="col-span-2">
+      <div className="w-full grid md:hidden grid-flow-row grid-cols-1 sm:grid-cols-2 gap-4 mb-8 pt-2">
+        <div className="col-span-1 sm:col-span-2">
           <h3 className="mt-2 text-2xl font-bold text-success tracking-tight md:text-3xl lg:text-4xl">
             Other Sections
           </h3>
         </div>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/projects"}
-            className="inline-flex items-center"
-          >
-            <FaLaptopCode size={30} className="mr-2" />
+        <button className="btn hover:btn-success btn-sm">
+          <Link href={"/projects"} className="inline-flex items-center">
+            <FaLaptopCode size={24} className="mr-2" />
             Projects
           </Link>
         </button>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/education"}
-            className="inline-flex items-center"
-          >
-            <FaCertificate size={30} className="mr-2" />
+        <button className="btn hover:btn-success btn-sm">
+          <Link href={"/education"} className="inline-flex items-center">
+            <FaCertificate size={24} className="mr-2" />
             Education
           </Link>
         </button>
-        <button className="btn hover:btn-success">
-          <Link
-            href={"/experience"}
-            className="inline-flex items-center"
-          >
-            <FaBriefcase size={30} className="mr-2" />
+        <button className="btn hover:btn-success btn-sm">
+          <Link href={"/experience"} className="inline-flex items-center">
+            <FaBriefcase size={24} className="mr-2" />
             Experience
           </Link>
         </button>
-        <button className="btn hover:btn-success">
+        <button className="btn hover:btn-success btn-sm">
           <Link href={"/blogs"} className="inline-flex items-center">
-            <FaNewspaper size={30} className="mr-2" />
+            <FaNewspaper size={24} className="mr-2" />
             Blogs
           </Link>
         </button>
