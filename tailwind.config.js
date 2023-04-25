@@ -13,6 +13,11 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["dark",],
+    themes: [{
+      dark: {
+        ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+        primary: "#36D399",
+      },
+    },],
   },
 }
