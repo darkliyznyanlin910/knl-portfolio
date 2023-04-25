@@ -12,19 +12,17 @@ interface Props {
 export default function PostsPreview({ post, tagFilter }: Props) {
   return (
     <div className="card card-side bg-base-100 shadow-xl mx-auto mb-4">
-      <Link href={`/blog/${post.slug}`} className="my-auto">
-        <figure>
-          {post.featured_image && (
-            <Image
-              src={post.featured_image}
-              alt={post.featured_image_alt}
-              width={200}
-              height={200}
-            />
-          )}
-        </figure>
-      </Link>
-      <div className="card-body">
+      <figure>
+        {post.featured_image && (
+          <Image
+            src={post.featured_image}
+            alt={post.featured_image_alt}
+            width={200}
+            height={200}
+          />
+        )}
+      </figure>
+      <div className="card-body w-2/3">
         <h2 className="card-title text-success">
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h2>

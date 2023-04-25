@@ -6,6 +6,8 @@ async function getPostList() {
   return posts.data?.data;
 }
 
+export const revalidate = 60;
+
 export default async function Blog() {
   const posts = await getPostList();
   return (
