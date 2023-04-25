@@ -30,9 +30,9 @@ export default function Home() {
           strong foundation in Full-stack Web Development and Cybersecurity, and
           am committed to expanding my skillset and achieving success in the
           industry. To learn more about my qualifications and experience, I
-          invite you to check out my resume in PDF form. Click the 'Continue'
-          button below to explore my website, and don't forget to download my
-          resume to see what I can offer. Thank you!
+          invite you to check out my resume in PDF form. You can explore other
+          sections in my website, and don't forget to download my resume to see
+          what I can offer. Thank you!
         </p>
         <div className="flex justify-center md:justify-start">
           <SocialMediaLinks />
