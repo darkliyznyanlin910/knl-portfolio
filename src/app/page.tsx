@@ -36,50 +36,40 @@ export default function Home() {
         </p>
         <div className="flex justify-center md:justify-start">
           <SocialMediaLinks />
-          <button className="btn btn-outline ml-3 btn-sm hover:btn-success">
-            <Link
-              href={
-                "https://knl-personal.s3.ap-southeast-1.amazonaws.com/Kaung_NyanLin_Resume.pdf"
-              }
-              className="inline-flex"
-              target="_blank"
-            >
-              <FaDownload className="mr-3" />
-              My Resume
-            </Link>
-          </button>
+          <Link
+            href={
+              "https://knl-personal.s3.ap-southeast-1.amazonaws.com/Kaung_NyanLin_Resume.pdf"
+            }
+            className="btn btn-outline ml-3 btn-sm hover:btn-success"
+            target="_blank"
+          >
+            <FaDownload className="mr-3" />
+            My Resume
+          </Link>
         </div>
       </div>
-      <div className="w-full grid md:hidden grid-flow-row grid-cols-1 sm:grid-cols-2 gap-4 mb-8 pt-2">
+      <div className="w-full grid md:hidden grid-flow-row grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
         <div className="col-span-1 sm:col-span-2">
           <h3 className="mt-2 text-2xl font-bold text-success tracking-tight md:text-3xl lg:text-4xl">
             Other Sections
           </h3>
         </div>
-        <button className="btn hover:btn-success btn-sm">
-          <Link href={"/projects"} className="inline-flex items-center">
-            <FaLaptopCode size={24} className="mr-2" />
-            Projects
-          </Link>
-        </button>
-        <button className="btn hover:btn-success btn-sm">
-          <Link href={"/education"} className="inline-flex items-center">
-            <FaCertificate size={24} className="mr-2" />
-            Education
-          </Link>
-        </button>
-        <button className="btn hover:btn-success btn-sm">
-          <Link href={"/experience"} className="inline-flex items-center">
-            <FaBriefcase size={24} className="mr-2" />
-            Experience
-          </Link>
-        </button>
-        <button className="btn hover:btn-success btn-sm">
-          <Link href={"/blogs"} className="inline-flex items-center">
-            <FaNewspaper size={24} className="mr-2" />
-            Blogs
-          </Link>
-        </button>
+        <Link href={"/projects"} className="btn hover:btn-success btn-sm">
+          <FaLaptopCode size={24} className="mr-2" />
+          Projects
+        </Link>
+        <Link href={"/education"} className="btn hover:btn-success btn-sm">
+          <FaCertificate size={24} className="mr-2" />
+          Education
+        </Link>
+        <Link href={"/experience"} className="btn hover:btn-success btn-sm">
+          <FaBriefcase size={24} className="mr-2" />
+          Experience
+        </Link>
+        <Link href={"/blogs"} className="btn hover:btn-success btn-sm">
+          <FaNewspaper size={24} className="mr-2" />
+          Blogs
+        </Link>
       </div>
     </div>
   );

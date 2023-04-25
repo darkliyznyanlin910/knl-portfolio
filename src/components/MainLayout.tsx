@@ -77,7 +77,7 @@ export default function MainLayout({
           </div>
         </div>
         {/* <!-- Page content here --> */}
-        <main className="mt-4 flex px-4 mb-14">
+        <main className="mt-4 flex px-4 mb-16">
           <div className="container mx-auto w-full md:w-3/4 lg:w-2/3 mb-4">
             {directory.length > 0 && (
               <div className="text-md breadcrumbs mb-2">
@@ -116,14 +116,15 @@ export default function MainLayout({
             {children}
           </div>
         </main>
-        <footer className="footer p-4 bg-base-300 absolute bottom-0 z-50">
+        <footer
+          className="footer p-4 bg-base-300 absolute bottom-0"
+          style={{ zIndex: 9999 }}
+        >
           <div className="w-full items-center flex justify-between">
             <p>Copyright © 2023 Johnny Lin</p>
-            <button className="btn btn-sm btn-outline" type="button">
-              <Link href={"/techUsed"} className="inline-flex items-center">
-                <FaInfo className="mr-3" /> Tech Used
-              </Link>
-            </button>
+            <Link href={"/techUsed"} className="btn btn-sm btn-outline">
+              <FaInfo className="mr-3" /> Tech Used
+            </Link>
           </div>
         </footer>
       </div>

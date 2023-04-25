@@ -39,11 +39,16 @@ export default async function Post({ params }: { params: { slug: string } }) {
               ) : (
                 <>
                   {posts?.map((post, index) => (
-                    <PostsPreview
+                    <div
                       key={index}
-                      post={post}
-                      tagFilter={params.slug}
-                    />
+                      className={index !== posts.length - 1 ? "mb-4" : ""}
+                    >
+                      <PostsPreview
+                        key={index}
+                        post={post}
+                        tagFilter={params.slug}
+                      />
+                    </div>
                   ))}
                 </>
               )}

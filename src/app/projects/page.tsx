@@ -80,7 +80,7 @@ export default function Projects() {
           </div>
         </ProjectCard>
       </div>
-      <div className="mb-4">
+      <div>
         <ProjectCard
           image={
             <Image

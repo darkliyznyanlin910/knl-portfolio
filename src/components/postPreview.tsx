@@ -6,12 +6,12 @@ import HumanDate from "./humanDate";
 
 interface Props {
   post: Butter.Post;
-  tagFilter: string | undefined;
+  tagFilter?: string;
 }
 
 export default function PostsPreview({ post, tagFilter }: Props) {
   return (
-    <div className="card card-compact md:card-side bg-base-100 shadow-xl mx-auto mb-4">
+    <div className="card card-compact md:card-side bg-base-100 shadow-xl mx-auto">
       <figure className="w-full md:w-1/3">
         {post.featured_image && (
           <Image

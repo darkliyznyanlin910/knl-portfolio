@@ -14,7 +14,9 @@ export default async function Blog() {
     <>
       {!posts?.length && <div>No blog posts found.</div>}
       {posts?.map((post, index) => (
-        <PostsPreview key={index} post={post} tagFilter={undefined} />
+        <div key={index} className={index !== posts.length - 1 ? "mb-4" : ""}>
+          <PostsPreview post={post} />
+        </div>
       ))}
     </>
   );
