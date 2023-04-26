@@ -25,7 +25,7 @@ export default function PostsPreview({ post, tagFilter }: Props) {
       </figure>
       <div className="card-body md:w-2/3">
         <h2 className="card-title text-success">
-          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link href={`/blogs/${post.slug}`}>{post.title}</Link>
         </h2>
         <HumanDate dateString={post.published as unknown as string} />
         <div dangerouslySetInnerHTML={{ __html: post.summary }}></div>
