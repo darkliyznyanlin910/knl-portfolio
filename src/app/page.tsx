@@ -12,14 +12,16 @@ import {
 export default function Home() {
   return (
     <div className="flex-col md:flex-row-reverse">
-      <Image
-        src={"/profilePicture.jpeg"}
-        alt={"Profile Picture"}
-        width={1000}
-        height={1000}
-        className="max-w-sm rounded-lg shadow-md"
-        priority
-      />
+      <div>
+        <Image
+          src={"/profilePicture.jpeg"}
+          alt={"Profile Picture"}
+          width={2000}
+          height={2000}
+          className="w-full md:w-1/2 lg:w-1/3 rounded-lg shadow-md mx-auto"
+          priority
+        />
+      </div>
       <div className="pt-6">
         <h1 className="text-4xl font-bold">
           Hi I{"'"}m <span className="text-success">Johnny Lin</span>,
