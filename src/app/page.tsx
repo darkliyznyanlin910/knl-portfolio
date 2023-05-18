@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <div className="flex-col md:flex-row-reverse">
       <Image
-        src={"/profilePicture.jpg"}
+        src={"/profilePicture.jpeg"}
         alt={"Profile Picture"}
-        width={250}
-        height={250}
-        className="max-w-sm rounded-lg shadow-2xl"
+        width={1000}
+        height={1000}
+        className="max-w-sm rounded-lg shadow-md"
         priority
       />
       <div className="pt-6">
