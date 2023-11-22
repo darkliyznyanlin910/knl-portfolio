@@ -17,19 +17,70 @@ export default function Experience() {
             <TimelineCard
               icon={
                 <Image
-                  src={"/experience/mysfit.png"}
-                  alt={"CWSS"}
+                  src={"/experience/osiris.png"}
+                  alt={"Osiris"}
                   width={24}
                   height={24}
                   style={{ height: "auto", width: "auto" }}
                 />
               }
-              title={"Full Stack Developer, CTO"}
+              title={"Software Engineer"}
+              subtitle={"Osiris.sg"}
+              link={"https://osiris.sg"}
+              timeline={"Aug 2023 - Present"}
+            >
+              <ul className="w-full space-y-1 list-disc list-inside">
+                <li>
+                  Designed{" "}
+                  <span className="text-success">
+                    Real-time MQTT communication schema
+                  </span>{" "}
+                  for IoT Platform.
+                </li>
+                <li>
+                  Implemented a{" "}
+                  <span className="text-success">
+                    synchronized and multi-platform authentication
+                  </span>
+                  .
+                </li>
+                <li>
+                  Devised and published a{" "}
+                  <span className="text-success">private NPM package</span> for
+                  users' IoT devices to connect to Osiris Platform.
+                </li>
+                <li>
+                  Wrote{" "}
+                  <span className="text-success">technical documentation</span>{" "}
+                  to ease onboarding process for new developers.
+                </li>
+                <li>
+                  In charge of migrating infrastructure to{" "}
+                  <span className="text-success">AWS</span>.
+                </li>
+              </ul>
+            </TimelineCard>
+          ),
+          type: "work",
+        },
+        {
+          element: (
+            <TimelineCard
+              icon={
+                <Image
+                  src={"/experience/mysfit.png"}
+                  alt={"Mysfit"}
+                  width={24}
+                  height={24}
+                  style={{ height: "auto", width: "auto" }}
+                />
+              }
+              title={"Full Stack Developer"}
               subtitle={"Mysfit Pte. Ltd."}
               link={"https://dev.mysfitygn.com"}
-              timeline={"Dec 2022 - Present"}
+              timeline={"Nov 2022 - May 2023"}
             >
-              <ul className="max-w-md space-y-1 list-disc list-inside">
+              <ul className="w-full space-y-1 list-disc list-inside">
                 <li>
                   Planned website architecture, frontend -{" "}
                   <span className="text-success">Next.js</span>, backend -
@@ -63,7 +114,7 @@ export default function Experience() {
               icon={
                 <Image
                   src={"/education/sp.ico"}
-                  alt={"CWSS"}
+                  alt={"Singapore Polytechnic"}
                   width={24}
                   height={24}
                   style={{ height: "auto", width: "auto" }}
@@ -76,9 +127,9 @@ export default function Experience() {
               link={
                 "https://www.sp.edu.sg/engineering-cluster/eee/sp-engineering-show/engineering-show-2023/5g-aiot-lorawan-sensor-network-for-smart-and-sustainable-campus"
               }
-              timeline={"Mar 2022 - Aug 2022"}
+              timeline={"Mar 2022 - Sep 2022"}
             >
-              <ul className="max-w-md space-y-1 list-disc list-inside">
+              <ul className="w-full space-y-1 list-disc list-inside">
                 <li>
                   <span className="text-success">Achieved Distinction</span> for
                   this internship project.

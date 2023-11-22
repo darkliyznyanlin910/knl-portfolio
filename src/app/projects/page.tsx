@@ -14,6 +14,55 @@ export default function Projects() {
         <ProjectCard
           image={
             <Image
+              src={"/projects/osiris.png"}
+              alt={"Mysfit"}
+              width={2000}
+              height={2000}
+              className="w-full"
+              priority
+            />
+          }
+          title={"Osiris.sg"}
+          link={"https://osiris.sg"}
+        >
+          <div>
+            <ul className="w-full space-y-1 list-disc list-inside">
+              <li>
+                Designed{" "}
+                <span className="text-success">
+                  Real-time MQTT communication schema
+                </span>{" "}
+                for IoT Platform.
+              </li>
+              <li>
+                Implemented a{" "}
+                <span className="text-success">
+                  synchronized and multi-platform authentication
+                </span>
+                .
+              </li>
+              <li>
+                Devised and published a{" "}
+                <span className="text-success">private NPM package</span> for
+                users' IoT devices to connect to Osiris Platform.
+              </li>
+              <li>
+                Wrote{" "}
+                <span className="text-success">technical documentation</span> to
+                ease onboarding process for new developers.
+              </li>
+              <li>
+                In charge of migrating infrastructure to{" "}
+                <span className="text-success">AWS</span>.
+              </li>
+            </ul>
+          </div>
+        </ProjectCard>
+      </div>
+      <div className="mb-4">
+        <ProjectCard
+          image={
+            <Image
               src={"/projects/mysfit.png"}
               alt={"Mysfit"}
               width={2000}
@@ -27,10 +76,9 @@ export default function Projects() {
         >
           <div>
             <p>
-              As a <span className="text-success">Full Stack Developer</span>{" "}
-              and <span className="text-success">CTO</span> at Mysfit Pte. Ltd.,
-              a start-up with 3 of my friends, I played a key role in designing
-              and implementing the website architecture using{" "}
+              As a <span className="text-success">Full Stack Developer</span> at
+              Mysfit Pte. Ltd., a start-up with 3 of my friends, I played a key
+              role in designing and implementing the website architecture using{" "}
               <span className="text-success">Next.js</span> and{" "}
               <span className="text-success">NodeJS with TypeScript</span>. I
               reviewed and debugged code, coordinated a team of two developers,
