@@ -40,7 +40,7 @@ export default function Home() {
           <SocialMediaLinks />
           <Link
             href={
-              "https://knl-personal.s3.ap-southeast-1.amazonaws.com/Kaung_NyanLin_Resume.pdf"
+              "https://knl-personal.s3.ap-southeast-1.amazonaws.com/KaungNyanLin_Resume.pdf"
             }
             className="btn btn-outline ml-3 btn-sm hover:btn-success"
             target="_blank"
